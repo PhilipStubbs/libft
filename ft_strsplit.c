@@ -25,9 +25,10 @@ char	**ft_strsplit(char const *s, char c)
 	i = 0;
 	words = ft_strcount(s, c);
 	tempint = 0;
-	if ((ret = (char**)malloc(words + 1)))
+	ret = (char**)malloc(words + 1);
+	if (!ret)
 		return (NULL);
-	while (i++ < words)
+	while (i < words)
 	{	
 		while (s[tempint] == c)
 			tempint++;
@@ -37,6 +38,7 @@ char	**ft_strsplit(char const *s, char c)
 		ft_strcpy(ret[i], temp);
 		while (s[tempint] != c)
 			tempint++;
+		i++;
 	}
 	return (ret);
 }
