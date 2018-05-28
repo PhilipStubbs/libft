@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	long long int i;
-	int in;
-	int c;
+	long long int	i;
+	int				in;
+	int				c;
 
 	i = 0;
 	in = 0;
@@ -32,9 +32,9 @@ int	ft_atoi(const char *str)
 		i = (i * 10) + (str[in++] - '0');
 	if (str[c] == '-')
 		i *= -1;
-	if ( i == 9223372036854775807)
+	if (i == 9223372036854775807)
 		i = -1;
-	if ( i == -9223372036854775806)
+	if (i == -9223372036854775806)
 		i = 1;
 	return (i);
 }

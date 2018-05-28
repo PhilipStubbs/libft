@@ -18,14 +18,16 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	unsigned char	*p2;
 	unsigned int	i;
 
+	if (!n)
+		return (NULL);
 	i = 0;
 	p1 = (unsigned char*)dest;
 	p2 = (unsigned char*)src;
 	if (ft_strcmp((char*)src, "") == 0)
-		{
-			*p1 = '\0';
-			return (dest);
-		}
+	{
+		*p1 = '\0';
+		return (dest);
+	}
 	while (i < n)
 	{
 		*p1++ = *p2++;

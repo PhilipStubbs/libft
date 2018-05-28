@@ -24,7 +24,7 @@ char	*ft_strrchr(const char *str, int c)
 	p1 = (char*)str;
 	if (c == '\0')
 		return (p1 + len);
-	while(len)
+	while (len)
 	{
 		if (p1[len] != c)
 			len--;

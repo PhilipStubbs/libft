@@ -30,6 +30,5 @@ char	*ft_strmap(char const *s, char (*f)(char))
 		p[i++] = f(*s++);
 	}
 	p[i] = '\0';
-
 	return (p);
 }
