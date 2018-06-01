@@ -82,6 +82,7 @@ char				*ft_strpull_ptr(const char **s, char c);
 int					ft_strcount(char const *s, char d);
 int					ft_wordlen(char const *s, char d);
 int					ft_intlen(int n);
+int					ft_strchr_idx(const char *str, int c);
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
