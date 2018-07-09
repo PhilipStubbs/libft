@@ -55,7 +55,7 @@ static void	ft_strpull(int w, char **ret, char *str)
 	ret[w][i] = '\0';
 }
 
-char	**ft_split(char *str)
+char		**ft_split(char *str)
 {
 	int		words;
 	char	**ret;
