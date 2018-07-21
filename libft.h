@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pstubbs <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: pstubbs <pstubbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 08:15:14 by pstubbs           #+#    #+#             */
-/*   Updated: 2018/05/28 09:50:01 by pstubbs          ###   ########.fr       */
+/*   Updated: 2018/07/21 10:26:17 by pstubbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,4 +107,5 @@ int					get_next_line(const int fd, char **line);
 int					ft_isspace(char c);
 char				**ft_split(char *str);
 void				ft_intcpy(int *dest, const int *src, size_t n);
+long int			ft_atol(const char *str);
 #endif
