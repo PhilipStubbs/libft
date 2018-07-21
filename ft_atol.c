@@ -6,15 +6,15 @@
 /*   By: pstubbs <pstubbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/21 10:10:58 by pstubbs           #+#    #+#             */
-/*   Updated: 2018/07/21 10:22:51 by pstubbs          ###   ########.fr       */
+/*   Updated: 2018/07/21 10:35:27 by pstubbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 long int	ft_atol(const char *str)
 {
 	long int	i;
-	int				in;
-	int				c;
+	int			in;
+	int			c;
 
 	i = 0;
 	in = 0;
