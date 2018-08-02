@@ -6,7 +6,7 @@
 /*   By: pstubbs <pstubbs@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 08:15:14 by pstubbs           #+#    #+#             */
-/*   Updated: 2018/07/23 08:07:23 by pstubbs          ###   ########.fr       */
+/*   Updated: 2018/08/02 13:02:01 by pstubbs          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,4 +109,10 @@ int					ft_isspace(char c);
 char				**ft_split(char *str);
 void				ft_intcpy(int *dest, const int *src, size_t n);
 long int			ft_atol(const char *str);
+
+char				*ft_strmerge(char *s1, char *s2);
+void				ft_printintarray(int *list, int size);
+void				ft_deldouble(char ***str);
+int					ft_doublesize(char **list);
+void				ft_printchardouble(char **list);
 #endif
